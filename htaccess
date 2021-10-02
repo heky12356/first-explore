@@ -1,0 +1,11 @@
+##rewrite apache create www.0558.la
+
+RewriteEngine On 
+RewriteRule links/([1-9]+[0-9]*).html$ links-.php?id=$1 [L] 
+RewriteRule seo/([a-zA-Z0-9_.-]*)/([1-9]+[0-9]*).html$ links1-.php?id=$2 [L] 
+RewriteRule so/(.*?).html$ search.php?text=$1 [L] 
+RewriteRule so/$ search.php [L] 
+RewriteRule news-([a-zA-Z0-9_.-]*).html$ news.php?article=$1 [L] 
+RewriteRule sitemap.xml$ dada/sitemap.php [L] 
+RewriteRule dir-([1-9]+[0-9]*)-([1-9]+[0-9]*).html$ dir.php?dirmulu=$1&page=$2 [L] 
+ErrorDocument   
